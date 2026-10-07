@@ -63,7 +63,6 @@ const translations = {
   "AIR FORCE / SMART GRID": "공군 / 스마트 그리드",
   "ROKAF × KEPCO Grid-K Research Collaboration": "대한민국 공군 × 한전 Grid-K 공동 연구개발",
   "A joint R&D concept exploring how KEPCO's Grid-K platform could strengthen energy resilience at Republic of Korea Air Force bases through secure distribution management, microgrids and continuity for mission-critical loads.": "한국전력공사의 Grid-K 플랫폼을 바탕으로 보안 배전 관리, 마이크로그리드, 임무 핵심 부하의 전력 연속성을 통해 대한민국 공군 기지의 에너지 복원력을 높이는 공동 연구개발 구상입니다.",
-  "View Slides": "슬라이드 보기",
   "04 — HACKATHON": "04 — 해커톤",
   "Ideas into": "아이디어를",
   "prototypes.": "프로토타입으로.",
