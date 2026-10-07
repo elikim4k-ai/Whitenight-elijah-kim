@@ -61,7 +61,7 @@ const translations = {
   "Agentic AI System": "에이전트형 AI 시스템",
   "A multi-agent orchestration system (using a mixture-of-agents approach) that connects different quantized frontier & open-source language models through a single API.": "여러 에이전트 접근법을 활용해 양자화된 최신 및 오픈소스 언어 모델을 단일 API로 연결하는 멀티 에이전트 오케스트레이션 시스템입니다.",
   "AIR FORCE / SMART GRID": "공군 / 스마트 그리드",
-  "ROKAF × KEPCO Grid-K Research Collaboration": "대한민국 공군 × 한전 Grid-K 공동 연구개발",
+  "Air Force × Korea Electric Research Collaboration": "대한민국 공군 × 한국전력 연구 협력",
   "A joint R&D concept exploring how KEPCO's Grid-K platform could strengthen energy resilience at Republic of Korea Air Force bases through secure distribution management, microgrids and continuity for mission-critical loads.": "한국전력공사의 Grid-K 플랫폼을 바탕으로 보안 배전 관리, 마이크로그리드, 임무 핵심 부하의 전력 연속성을 통해 대한민국 공군 기지의 에너지 복원력을 높이는 공동 연구개발 구상입니다.",
   "04 — HACKATHON": "04 — 해커톤",
   "Ideas into": "아이디어를",
