@@ -20,17 +20,25 @@
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
+      <a href="#writing">Writing</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="menu" aria-label="Open menu">☰</button>
+    <div class="nav-actions">
+      <div class="language-toggle" role="group" aria-label="Choose language">
+        <button type="button" data-language="en" aria-pressed="true">ENG</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-language="ko" aria-pressed="false">KOR</button>
+      </div>
+      <button class="menu" aria-label="Open menu">☰</button>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero section">
       <div class="hero-copy">
         <p class="eyebrow">QUANTUM × AI × EARTH OBSERVATION</p>
-        <h1>Elijah<br><em>Researcher & Builder.</em></h1>
+        <h1>Elijah<br><em>Researcher &amp; Engineer.</em></h1>
         <p class="lead">
           Exploring practical intersections between quantum computing, artificial intelligence,
           optimisation, remote sensing and aerospace systems.
@@ -120,7 +128,7 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow">03 — PROJECTS</p>
-          <h2>Things I'm building.</h2>
+          <h2>Projects I've Been Involved With.</h2>
         </div>
       </div>
 
@@ -135,7 +143,6 @@
               for stratospheric Earth Observation platforms.
             </p>
           </div>
-          <a class="sample-work" href="assets/hyperspectral-payload-design-sample.pdf" download="Optimizing-Hyperspectral-Payload-Design.pdf">Sample Work <span>↓</span></a>
         </article>
 
         <article class="project">
@@ -161,7 +168,7 @@
               and quantum optimisation approaches.
             </p>
           </div>
-          <a class="sample-work" href="assets/adiabatic-quantum-optimization-sample.pdf" download="Adiabatic-Quantum-Optimization.pdf">Sample Work <span>↓</span></a>
+          <a class="sample-work" href="assets/adiabatic-quantum-optimization-sample.pdf">Sample Work <span>↗</span></a>
         </article>
 
         <article class="project">
@@ -174,7 +181,10 @@
               compare providers and prepare for practical adoption.
             </p>
           </div>
-          <a class="sample-work" href="assets/quantum-hardware-sample.pdf" download="Quantum-Hardware-Sample.pdf">Sample Work <span>↓</span></a>
+          <div class="project-samples">
+            <a class="sample-work" href="assets/quantum-hardware-sample.pdf">Sample Work <span>↗</span></a>
+            <a class="sample-work" href="assets/ionq-quantum-cloud-sample.pdf">Sample Work <span>↗</span></a>
+          </div>
         </article>
 
         <article class="project">
@@ -187,7 +197,36 @@
               for systems and organisations.
             </p>
           </div>
-          <a class="sample-work" href="assets/post-quantum-cryptography-sample.pdf" download="Post-Quantum-Cryptography-Sample.pdf">Sample Work <span>↓</span></a>
+          <a class="sample-work" href="assets/post-quantum-cryptography-sample.pdf">Sample Work <span>↗</span></a>
+        </article>
+
+        <article class="project">
+          <div class="project-number">06</div>
+          <div>
+            <p class="project-tag">QUANTUM + AI / SMART GRID</p>
+            <h3>Smart Grid</h3>
+            <p>
+              Exploring quantum-enabled grid expansion, spatial AI for distribution operations,
+              and quantum-inspired technologies for smarter, more resilient power grids.
+            </p>
+          </div>
+          <div class="project-samples">
+            <a class="sample-work" href="assets/smart-grid-ciq-expand.pdf" aria-label="Sample Work: CIQ-Expand Quantum-Enabled Grid Expansion">Sample Work <span>↗</span></a>
+            <a class="sample-work" href="assets/smart-grid-gridsense-spatial-ai.pdf" aria-label="Sample Work: GridSense Spatial AI Copilot for Distribution Operations">Sample Work <span>↗</span></a>
+            <a class="sample-work" href="assets/smart-grid-quantum-inspired-technologies.pdf" aria-label="Sample Work: Quantum-Inspired Technologies for Smart Grids">Sample Work <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-number">07</div>
+          <div>
+            <p class="project-tag">MULTI-AGENT AI / LLM ORCHESTRATION</p>
+            <h3>Agentic AI System</h3>
+            <p>
+              A multi-agent orchestration system (using a mixture-of-agents approach) that connects different quantized frontier &amp; open-source language models through a single API.
+            </p>
+          </div>
+          <a class="sample-work" href="assets/mul-ai-llm-conductor-overview.pdf">Sample Work <span>↗</span></a>
         </article>
       </div>
     </section>
@@ -217,22 +256,53 @@
             <h3>Global Quantum + AI Challenge</h3>
             <p class="hackathon-project">Proposal projects developed with colleagues at UPM, Spain.</p>
             <div class="proposal-links">
-              <a class="sample-work" href="assets/hackathon-certa-vwgroup-proposal.pdf" download="Certa-VWgroup-Proposal.pdf">Certa / VW Group <span>↓</span></a>
-              <a class="sample-work" href="assets/hackathon-ciq-expand-eon-proposal.pdf" download="CIQ-Expand-EON-Proposal.pdf">CIQ Expand / E.ON <span>↓</span></a>
-              <a class="sample-work" href="assets/hackathon-creditcardfraud-hsbc-proposal.pdf" download="Credit-Card-Fraud-HSBC-Proposal.pdf">Credit Card Fraud / HSBC <span>↓</span></a>
-              <a class="sample-work" href="assets/hackathon-fluxtrain-airbus-proposal.pdf" download="FluxTrain-Airbus-Proposal.pdf">FluxTrain / Airbus <span>↓</span></a>
-              <a class="sample-work" href="assets/hackathon-quasar-cleveland-clinic-proposal.pdf" download="QUASAR-Cleveland-Clinic-Proposal.pdf">QUASAR / Cleveland Clinic <span>↓</span></a>
+              <a class="sample-work" href="assets/hackathon-certa-vwgroup-proposal.pdf">Certa / VW Group <span>↗</span></a>
+              <a class="sample-work" href="assets/hackathon-ciq-expand-eon-proposal.pdf">CIQ Expand / E.ON <span>↗</span></a>
+              <a class="sample-work" href="assets/hackathon-creditcardfraud-hsbc-proposal.pdf">Credit Card Fraud / HSBC <span>↗</span></a>
+              <a class="sample-work" href="assets/hackathon-fluxtrain-airbus-proposal.pdf">FluxTrain / Airbus <span>↗</span></a>
+              <a class="sample-work" href="assets/hackathon-quasar-cleveland-clinic-proposal.pdf">QUASAR / Cleveland Clinic <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="hackathon-item">
+          <div class="hackathon-meta"><span>2026</span><span>UC IGNITION CHALLENGE</span></div>
+          <div>
+            <h3>Quantum-Optimized Agentic AI Orchestration System</h3>
+            <p class="hackathon-project"><span>Round Finalist</span></p>
+            <div class="proposal-links">
+              <a class="sample-work" href="assets/uc-ignition-quantum-agentic-ai-orchestration.pdf">Sample Work <span>↗</span></a>
             </div>
           </div>
         </article>
       </div>
     </section>
 
+    <section id="writing" class="section writing">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">05 — WRITING &amp; COMMENTARY</p>
+          <h2>Ideas at the<br><em>frontier.</em></h2>
+        </div>
+        <p class="muted">Selected writing on AI, quantum computing and emerging research.</p>
+      </div>
+      <article class="writing-card">
+        <div class="writing-meta"><span>WISER INSIDER</span><span>SEPTEMBER 2026 · 2 MIN READ</span></div>
+        <div class="writing-content">
+          <h3>Did AI crack the Navier–Stokes problem? And why the quantum industry should pay more attention.</h3>
+          <p>
+            A look at OpenAI's reported AI-assisted proof of a forced Navier–Stokes singularity, what remains unresolved,
+            and why large-scale AI reasoning could matter for quantum research and quantum-classical computing.
+          </p>
+          <a class="sample-work" href="https://www.thewiser.org/post/did-ai-crack-the-navier-stokes-problem-and-why-the-quantum-industry-should-pay-more-attention">Read Article <span>↗</span></a>
+        </div>
+      </article>
+    </section>
+
     <section id="experience" class="section">
-      <p class="eyebrow">05 — EXPERIENCE</p>
+      <p class="eyebrow">06 — EXPERIENCE</p>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="date">CURRENT</div>
+            <div class="date">PH.D</div>
           <div>
             <h3>Applied Doctorate Research</h3>
             <p>Massey University × Kea Aerospace</p>
@@ -261,7 +331,7 @@
     </section>
 
     <section id="contact" class="section contact">
-      <p class="eyebrow">06 — CONTACT</p>
+      <p class="eyebrow">07 — CONTACT</p>
       <h2>Let's explore<br><em>what's next.</em></h2>
       <p>For research, collaboration or technology discussions.</p>
       <div class="contact-links">
@@ -281,6 +351,17 @@
       <a href="#projects">Portfolio ↑</a>
     </div>
   </footer>
+
+  <nav class="section-rail" aria-label="Page sections">
+    <a href="#top" aria-label="Top"><span class="rail-dot"></span><span class="rail-label">Top</span></a>
+    <a href="#about" aria-label="About"><span class="rail-dot"></span><span class="rail-label">About</span></a>
+    <a href="#research" aria-label="Research"><span class="rail-dot"></span><span class="rail-label">Research</span></a>
+    <a href="#projects" aria-label="Projects"><span class="rail-dot"></span><span class="rail-label">Projects</span></a>
+    <a href="#hackathon" aria-label="Hackathon"><span class="rail-dot"></span><span class="rail-label">Hackathon</span></a>
+    <a href="#writing" aria-label="Writing"><span class="rail-dot"></span><span class="rail-label">Writing</span></a>
+    <a href="#experience" aria-label="Experience"><span class="rail-dot"></span><span class="rail-label">Experience</span></a>
+    <a href="#contact" aria-label="Contact"><span class="rail-dot"></span><span class="rail-label">Contact</span></a>
+  </nav>
 
   <div class="color-lens" aria-hidden="true"></div>
 

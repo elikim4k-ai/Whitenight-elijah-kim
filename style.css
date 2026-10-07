@@ -10,6 +10,11 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+html { scrollbar-color: #696969 #111; scrollbar-width: thin; }
+html::-webkit-scrollbar { width: 10px; }
+html::-webkit-scrollbar-track { background: #111; }
+html::-webkit-scrollbar-thumb { background: #555; border: 2px solid #111; border-radius: 999px; }
+html::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 body {
   margin: 0;
   background: var(--bg);
@@ -37,7 +42,19 @@ a { color: inherit; text-decoration: none; }
 .nav nav { display: flex; gap: 28px; }
 .nav nav a { color: var(--muted); font-size: 13px; transition: color .2s; }
 .nav nav a:hover { color: var(--text); }
+.nav-actions { display: flex; align-items: center; gap: 14px; }
+.language-toggle { display: flex; align-items: center; gap: 5px; padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: transparent; font: 10px "DM Mono", monospace; }
+.language-toggle button { padding: 2px; border: 0; color: inherit; background: transparent; font: inherit; }
+.language-toggle button[aria-pressed="true"], .language-toggle button:hover { color: var(--accent); }
+.language-toggle > span { color: #555; }
 .menu { display: none; background: none; border: 0; color: var(--text); font-size: 24px; }
+
+.section-rail { position: fixed; z-index: 15; right: 20px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 13px; }
+.section-rail a { position: relative; display: flex; align-items: center; justify-content: flex-end; min-width: 14px; min-height: 14px; }
+.rail-dot { width: 8px; height: 8px; border: 1px solid #777; border-radius: 50%; background: var(--bg); transition: transform .2s, background .2s, border-color .2s; }
+.rail-label { position: absolute; right: 20px; padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; background: rgba(9,9,9,.92); color: var(--muted); font: 10px "DM Mono", monospace; white-space: nowrap; opacity: 0; transform: translateX(5px); pointer-events: none; transition: .2s; }
+.section-rail a:hover .rail-label, .section-rail a.active .rail-label { opacity: 1; transform: translateX(0); }
+.section-rail a.active .rail-dot, .section-rail a:hover .rail-dot { background: var(--accent); border-color: var(--accent); transform: scale(1.25); }
 
 .section { max-width: var(--max); margin: 0 auto; padding: 130px 5vw; }
 .hero {
@@ -93,12 +110,14 @@ h3 { font-size: 25px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 60px; }
 .muted { color: var(--muted); }
 .research-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--line); }
-.research-card { background: var(--bg); padding: 38px; min-height: 260px; }
+.research-card { background: var(--bg); padding: 38px; min-height: 260px; display: flex; flex-direction: column; align-items: flex-start; }
 .research-card span, .project-number, .date {
   font: 500 11px "DM Mono", monospace; color: var(--accent);
 }
 .research-card h3 { margin: 45px 0 16px; }
 .research-card p, .project p { color: var(--muted); margin: 0; max-width: 600px; }
+.research-samples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 22px; }
+.research-samples .sample-work { padding: 7px 10px; font-size: 9px; }
 
 .lab-photo { margin: 0; min-width: 0; }
 .lab-photo img { display: block; width: 100%; object-fit: cover; filter: saturate(.78); transition: filter .35s, transform .6s; }
@@ -112,8 +131,6 @@ h3 { font-size: 25px; }
 
 .color-lens { display: none; }
 @media (hover: hover) and (pointer: fine) {
-  body { cursor: none; }
-  a, button { cursor: none; }
   .color-lens {
     display: block; position: fixed; z-index: 30; left: 0; top: 0;
     width: 112px; height: 112px; border-radius: 50%; pointer-events: none;
@@ -142,6 +159,7 @@ h3 { font-size: 25px; }
 }
 .sample-work span { color: var(--accent); font-size: 14px; }
 .sample-work:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+.project-samples { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .hackathon-list { border-top: 1px solid var(--line); }
 .hackathon-item { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 38px; padding: 34px 0; border-bottom: 1px solid var(--line); }
 .hackathon-meta { display: flex; flex-direction: column; gap: 8px; color: var(--accent); font: 10px "DM Mono", monospace; letter-spacing: .08em; }
@@ -150,6 +168,10 @@ h3 { font-size: 25px; }
 .hackathon-project span { color: var(--accent); }
 .hackathon-role { color: var(--muted); font-size: 13px; margin: 0; }
 .proposal-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.writing-card { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 38px; padding: 34px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.writing-meta { display: flex; flex-direction: column; gap: 8px; color: var(--accent); font: 10px "DM Mono", monospace; letter-spacing: .08em; }
+.writing-content h3 { max-width: 760px; font-size: clamp(24px, 3vw, 36px); line-height: 1.18; letter-spacing: -.035em; }
+.writing-content p { max-width: 700px; margin: 18px 0 24px; color: var(--muted); }
 
 .timeline { margin-top: 55px; border-top: 1px solid var(--line); }
 .timeline-item {
@@ -203,6 +225,8 @@ footer {
   .logo { font-size: 17px; }
   .nav nav { display: none; }
   .menu { display: block; }
+  .section-rail { right: 9px; gap: 10px; }
+  .rail-label { display: none; }
   .hero { grid-template-columns: 1fr; }
   .hero-visual { min-height: 380px; order: -1; }
   .portrait-wrap { width: 220px; height: 275px; }
@@ -225,7 +249,9 @@ footer {
   .timeline-item { grid-template-columns: 1fr; gap: 8px; }
   .project { grid-template-columns: 38px minmax(0, 1fr); gap: 12px; }
   .sample-work, .project .arrow { grid-column: 2; justify-self: start; }
+  .project-samples { grid-column: 2; flex-direction: row; flex-wrap: wrap; }
   .hackathon-item { grid-template-columns: 1fr; gap: 18px; }
+  .writing-card { grid-template-columns: 1fr; gap: 18px; }
   footer { display: flex; flex-direction: column; gap: 8px; }
   footer span { display: block; margin: 0; }
 }
