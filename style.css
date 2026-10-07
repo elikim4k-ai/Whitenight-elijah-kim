@@ -189,6 +189,17 @@ h3 { font-size: 25px; }
 .contact-links a:hover { border-color: var(--accent); color: var(--accent); }
 
 .cv-main { max-width: 980px; margin: 0 auto; padding: 150px 5vw 50px; }
+.cv-access-card { max-width: 720px; padding: clamp(26px, 5vw, 52px); border: 1px solid var(--line); background: rgba(255,255,255,.025); }
+.cv-access-card h1 { font-size: clamp(42px, 7vw, 68px); }
+.cv-access-copy { color: var(--muted); margin: 16px 0 30px; }
+.cv-access-card label { display: block; margin-bottom: 9px; color: var(--muted); font: 11px "DM Mono", monospace; }
+.cv-access-controls { display: flex; gap: 12px; }
+.cv-access-controls input { flex: 1; min-width: 0; padding: 14px 16px; border: 1px solid #444; border-radius: 999px; background: #111; color: var(--text); font: 13px "DM Mono", monospace; }
+.cv-access-controls button { padding: 0 20px; border: 1px solid #555; border-radius: 999px; background: transparent; color: var(--text); cursor: pointer; font: 11px "DM Mono", monospace; white-space: nowrap; }
+.cv-access-controls button:hover { border-color: var(--accent); color: var(--accent); }
+.cv-access-controls button:disabled { opacity: .6; cursor: wait; }
+.cv-access-error { margin: 14px 0 0; color: #ff8e8e; font: 11px "DM Mono", monospace; }
+.cv-content[hidden] { display: none; }
 .cv-intro { padding-bottom: 48px; border-bottom: 1px solid var(--line); }
 .cv-intro .eyebrow { margin-bottom: 18px; }
 .cv-intro h1 { font-size: clamp(52px, 8vw, 88px); }
@@ -242,6 +253,8 @@ footer {
   .section-heading { display: block; }
   .section-heading .muted { margin-top: 20px; }
   .cv-main { padding-top: 120px; }
+  .cv-access-controls { flex-direction: column; }
+  .cv-access-controls button { min-height: 48px; }
   .cv-role-head { display: block; }
   .cv-role time { display: block; margin-top: 6px; }
   .cv-columns { grid-template-columns: 1fr; gap: 20px; }

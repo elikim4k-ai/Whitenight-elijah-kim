@@ -19,42 +19,24 @@
     <a class="cv-back" href="index.html">← Portfolio</a>
   </header>
   <main class="cv-main">
-    <section class="cv-intro">
-      <p class="eyebrow">CURRICULUM VITAE</p>
-      <h1>Elijah W. Kim</h1>
-      <p class="cv-specialty">Quantum Computing · AI · Technology Education</p>
-      <div class="cv-contact">
-        <span>New Zealand</span><a href="mailto:eli.kim4k@gmail.com">eli.kim4k@gmail.com</a>
-        <a href="tel:+64278886117">+64 27 888 6117</a><a href="https://www.linkedin.com/in/eli-kim-4k/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <a href="https://github.com/elikim4k-ai/" target="_blank" rel="noreferrer">GitHub ↗</a>
-      </div>
+    <section class="cv-access-card" id="cv-gate">
+      <p class="eyebrow">PRIVATE CV</p>
+      <h1>CV access</h1>
+      <p class="cv-access-copy">Enter the password to view the curriculum vitae.</p>
+      <form id="cv-access-form">
+        <label for="cv-password">Password</label>
+        <div class="cv-access-controls">
+          <input id="cv-password" name="password" type="password" autocomplete="current-password" required>
+          <button type="submit">View CV <span>↗</span></button>
+        </div>
+        <p class="cv-access-error" id="cv-access-error" role="status" aria-live="polite" hidden></p>
+        <span id="year" hidden></span>
+      </form>
     </section>
-
-    <section class="cv-section">
-      <h2>Professional Summary</h2>
-      <p>PhD researcher in quantum sensing at Massey University and Head of WISER Insider (Quantum), with an MSc in Quantum Computing Technology and more than 15 years of experience across quantum computing, AI/ML, spatial computing, and international ICT programmes. I design and deliver curricula, workshops, and training for graduate students, industry researchers, and executive audiences, translating advanced technology into practical, workforce-aligned learning. I am seeking to contribute as a Subject Matter Expert and Curriculum Developer to QuSTEAM's QISE education for two-year community colleges.</p>
-    </section>
-
-    <section class="cv-section">
-      <h2>Relevant Experience</h2>
-      <article class="cv-role"><div class="cv-role-head"><h3>PhD Researcher, Quantum Sensing <span>· Massey University</span></h3><time>Aug 2026 – Present</time></div><p class="cv-location">New Zealand</p><ul><li>Conduct industry-embedded doctoral research with Kea Aerospace on optimizing hyperspectral payload design for stratospheric Earth observation, supporting disaster response and hazard monitoring.</li><li>Develop a quantitative framework linking sensor design choices to the detectability of hazard-related surface change, applying quantum and machine learning techniques to extend the work into quantum sensing.</li><li>Evaluate detection performance using simulated and real airborne hyperspectral datasets across varying atmospheric and sensor conditions.</li><li>Translate research findings into practical design guidance for lightweight sensing payloads in collaboration with industry engineers.</li></ul></article>
-      <article class="cv-role"><div class="cv-role-head"><h3>Head of WISER Insider (Quantum) <span>· WISER</span></h3><time>Jan 2026 – Present</time></div><p class="cv-location">Washington, DC, USA · Remote · Part-time</p><ul><li>Lead WISER Insider's quantum ecosystem, connecting startups, technology providers, researchers, and industry partners to accelerate quantum education and adoption.</li><li>Design, develop, and deliver quantum software workshops for graduate students and industry researchers, and develop Quantum and AI curriculum for executive education.</li><li>Build and maintain a centralised repository of quantum startups, providers, research institutions, educational resources, and use cases, including a quantum software ecosystem resource suite.</li><li>Developed a vendor-neutral framework for evaluating quantum hardware modalities and vendors, delivered as a client workshop on preparing for quantum hardware.</li></ul></article>
-      <article class="cv-role"><div class="cv-role-head"><h3>AI/ML Consultant <span>· Skills Union</span></h3><time>Sep 2025 – Present</time></div><p class="cv-location">Singapore · Remote</p><ul><li>Design course curricula and learning structures for client organisations, spanning junior-level staff through C-level executives.</li><li>Tailor AI and machine learning content to each audience, translating technical concepts into practical, role-relevant learning outcomes.</li><li>Advise clients on AI and machine learning solution design and adoption; received the highest positive ratings among fellow experts.</li></ul></article>
-      <article class="cv-role"><div class="cv-role-head"><h3>Founder <span>· Qaankunka AI</span></h3><time>Aug 2022 – Present</time></div><p class="cv-location">Seoul, Korea · Remote</p><ul><li>Lead development of an AI creative platform that applies quantum optimization to intelligent pixelation.</li><li>Build tools for creators to generate, transform, and optimize visual content through AI-powered workflows.</li><li>Collaborate with creators, researchers, startups, and technology partners to develop applications and grow the platform ecosystem.</li></ul></article>
-      <article class="cv-role"><div class="cv-role-head"><h3>AI/ML Project Lead <span>· Microsoft AI School</span></h3><time>May 2024 – Nov 2024</time></div><p class="cv-location">Seoul, Korea · Hybrid</p><ul><li>Led development of an AI-powered voice-phishing detection platform using retrieval-augmented generation (RAG) and LangChain, in partnership with ElevenLabs.</li><li>Defined project roadmaps, technical requirements, milestones, and success measures across development, testing, and deployment.</li><li>Coordinated engineers, researchers, and external partners to align solutions with user and business needs. Earned Microsoft AI School certification with a score of 918/1000.</li></ul></article>
-      <article class="cv-role"><div class="cv-role-head"><h3>Co-founder and Chief Strategy Officer <span>· Ushuaia AI</span></h3><time>Jan 2022 – May 2024</time></div><p class="cv-location">Seoul, Korea</p><ul><li>Defined the company vision, growth roadmap, and market positioning across augmented reality, AI, and spatial computing.</li><li>Guided development of immersive applications for Apple Vision Pro in collaboration with Apple.</li><li>Built relationships with technology partners, enterprises, investors, and creators to develop use cases and expand adoption.</li></ul></article>
-      <article class="cv-role"><div class="cv-role-head"><h3>Technology Consultant, AR/VR <span>· Samsung Electronics</span></h3><time>Nov 2018 – May 2021</time></div><p class="cv-location">Seoul, Korea</p><ul><li>Evaluated emerging AR/VR technologies, platforms, and market trends to identify high-impact use cases.</li><li>Advised cross-functional teams on the design, prototyping, testing, and integration of immersive applications.</li><li>Partnered with developers, startups, and technology partners on pilot projects; trained senior executives on technology usage and adoption quarterly.</li></ul></article>
-      <article class="cv-role"><div class="cv-role-head"><h3>Programme Officer, ICT <span>· United Nations</span></h3><time>Jun 2015 – Oct 2018</time></div><p class="cv-location">Bangkok, Thailand</p><ul><li>Led ICT programmes addressing gender inequality and digital inclusion, including the Women ICT Frontier Initiative across 63 member states.</li><li>Conducted Training of Trainers programmes empowering women with ICT skills to start businesses.</li><li>Managed a multidisciplinary team delivering ICT training and initiatives that strengthened digital literacy, employability, and entrepreneurship.</li></ul></article>
-      <article class="cv-role"><div class="cv-role-head"><h3>Virtual Technology Officer <span>· Republic of Korea Air Force</span></h3><time>Sep 2009 – Dec 2012</time></div><p class="cv-location">Seoul, Korea</p><ul><li>Led training of 2,200 Air Force airmen in virtual combat simulation and flight simulation.</li><li>Led pilot simulation, virtual combat simulation, and VR-based drone combat simulation programmes to improve training and readiness.</li><li>Managed acquisition, acceptance testing, and rollout of simulation systems.</li></ul></article>
-    </section>
-
-    <section class="cv-section"><h2>Research Projects</h2><article class="cv-role"><h3>QUBO Formulation for Quantum-Assisted Multi-Agent AI Workforce Orchestration</h3><p>QUBO-based orchestration model for multi-agent AI workforces, with QAOA and adiabatic quantum computation simulations.</p></article><article class="cv-role"><h3>Matching Commercial VR Headsets to Spatial Formulations by Projected Pixels</h3><p>Tested commercial VR headsets across different spatial formulations to identify the optimal match between VR devices and metaverse applications.</p></article></section>
-
-    <section class="cv-section"><h2>Education</h2><ul class="cv-plain-list"><li><strong>PhD, Quantum Sensing (in progress)</strong> · Massey University, New Zealand</li><li><strong>MSc, Quantum Computing Technology</strong> · Universidad Politécnica de Madrid (UPM), Spain</li><li><strong>Postgraduate, Artificial Intelligence and Machine Learning</strong> · Caltech</li><li><strong>MSc, Electrical and Computer Engineering</strong> · Hanzhong University</li><li><strong>BSc, Regional Development (GIS and Remote Sensing)</strong> · University of Arizona</li></ul></section>
-    <section class="cv-section cv-columns"><div><h2>Certification</h2><p>Project Management Certification · United Nations</p></div><div><h2>Skills</h2><p><strong>Quantum:</strong> QUBO and optimization formulations, quantum software ecosystem analysis, quantum hardware modality evaluation</p><p><strong>AI/ML:</strong> RAG, LangChain, Azure AI, LLM applications, computer vision, robotics (ROS2)</p><p><strong>Content and communication:</strong> Technical writing, workshop and training materials, client-facing deliverables, web content</p><p><strong>Languages:</strong> English, Korean</p></div></section>
-    <footer class="cv-footer"><span>© <span id="year"></span> Elijah W. Kim</span><a href="index.html">Back to portfolio ↑</a></footer>
+    <div class="cv-content" id="cv-content" hidden></div>
   </main>
   <div class="color-lens" aria-hidden="true"></div>
   <script src="script.js"></script>
+  <script src="cv-access.js"></script>
 </body>
 </html>
