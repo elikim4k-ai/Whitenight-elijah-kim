@@ -202,9 +202,17 @@ h3 { font-size: 25px; }
 .cv-content[hidden] { display: none; }
 .cv-intro { padding-bottom: 48px; border-bottom: 1px solid var(--line); }
 .cv-intro .eyebrow { margin-bottom: 18px; }
-.cv-intro h1 { font-size: clamp(52px, 8vw, 88px); }
+.cv-intro h1 { font-size: clamp(42px, 6vw, 68px); }
 .cv-specialty { margin: 20px 0; color: var(--muted); font-size: 18px; }
+.cv-tags { display: flex; flex-wrap: wrap; gap: 7px; list-style: none; padding: 0; margin: 0 0 24px; }
+.cv-tags li { padding: 5px 9px; border: 1px solid #747474; border-radius: 4px; color: #414141; font: 500 9px "DM Mono", monospace; letter-spacing: .04em; text-transform: uppercase; }
 .cv-contact { display: flex; flex-wrap: wrap; gap: 10px 22px; color: var(--muted); font: 11px "DM Mono", monospace; }
+.cv-capability-wrap { overflow-x: auto; }
+.cv-capabilities { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 13px; }
+.cv-capabilities th, .cv-capabilities td { padding: 9px 11px; border: 1px solid #858585; text-align: left; vertical-align: top; }
+.cv-capabilities thead { background: #666; color: #eee; }
+.cv-capabilities tbody tr:nth-child(odd) { background: rgba(255,255,255,.17); }
+.cv-capabilities tbody th { width: 31%; font-weight: 600; }
 .cv-contact a:hover, .cv-back:hover { color: var(--accent); }
 .cv-back { font: 11px "DM Mono", monospace; color: var(--muted); }
 .cv-section { padding: 42px 0; border-bottom: 1px solid var(--line); }
@@ -218,6 +226,8 @@ h3 { font-size: 25px; }
 .cv-role time, .cv-location { color: var(--muted); font: 11px "DM Mono", monospace; white-space: nowrap; }
 .cv-role ul, .cv-plain-list { color: var(--muted); padding-left: 20px; margin: 12px 0 0; }
 .cv-role li, .cv-plain-list li { margin: 7px 0; padding-left: 4px; }
+.cv-resource-link { display: inline-block; margin-top: 10px; color: #363636; font: 500 10px "DM Mono", monospace; border-bottom: 1px solid #696969; }
+.cv-resource-link:hover { color: #111; border-color: #222; }
 .cv-plain-list { list-style: none; padding: 0; }
 .cv-plain-list strong, .cv-columns strong { color: var(--text); font-weight: 500; }
 .cv-columns { display: grid; grid-template-columns: .7fr 1.3fr; gap: 50px; }
@@ -253,6 +263,8 @@ footer {
   .section-heading { display: block; }
   .section-heading .muted { margin-top: 20px; }
   .cv-main { padding-top: 120px; }
+  .cv-capabilities { min-width: 560px; }
+  .cv-capabilities th, .cv-capabilities td { padding: 8px; }
   .cv-access-controls { flex-direction: column; }
   .cv-access-controls button { min-height: 48px; }
   .cv-role-head { display: block; }
