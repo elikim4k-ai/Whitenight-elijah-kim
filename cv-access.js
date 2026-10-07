@@ -14,7 +14,7 @@ cvForm?.addEventListener("submit", async event => {
   cvSubmit.firstChild.textContent = "Checking… ";
 
   try {
-    const response = await fetch("assets/cv-content.enc", { cache: "no-store" });
+    const response = await fetch("assets/cv-content.enc?v=20261007-2", { cache: "no-store" });
     if (!response.ok) throw new Error("CV data unavailable");
     const encrypted = await response.json();
     const passwordKey = await crypto.subtle.importKey(
